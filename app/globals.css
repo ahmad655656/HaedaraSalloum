@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+  @apply text-gray-900 bg-gradient-to-b from-white via-gray-50 to-white ;
+}
+
+
+}
+
+:root{
+  scrollbar-width: none;
+}
+
+.h1{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+/* في نهاية الملف */
+canvas {
+  touch-action: none;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* تحسين التباين للنصوص فوق المشهد */
+h1, h2, h3, p, button {
+  text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.neon-text {
+  text-shadow: 0 0 25px rgba(0, 150, 255, 0.25);
+}
+
+
+.h2{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.h3{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@media (min-width: 1200px) {
+  .h1{
+      font-size: 60px;
+  }
+  .h2{
+    font-size: 48px;
+  }
+  .h3{
+    font-size: 24px;
+  }
+}
+
+.text-outline{
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.text-outline-hover{
+  -webkit-text-stroke: 1px #00ff99;
+}
+/* تحسين جودة الصور */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* تحسين الظلال */
+.drop-shadow-2xl {
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+/* أنيميشن للصور */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(0.5deg); }
+}
+
+.image-float {
+  animation: float 6s ease-in-out infinite;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+canvas {
+  touch-action: none;
+}
+
+
+/*  :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+ */
