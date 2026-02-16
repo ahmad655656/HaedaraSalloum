@@ -3,25 +3,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { links } from '@/constants/navlinks'
 
-export const links = [
-  {
-    name: "services",
-    path: "#services",
-  },
-  {
-    name: "resume",
-    path: "#resume",
-  },
-  {
-    name: "work",
-    path: "#work",
-  },
-  {
-    name: "contact",
-    path: "#contact",
-  },
-]
+
 
 const Nav = () => {
   const pathname = usePathname();

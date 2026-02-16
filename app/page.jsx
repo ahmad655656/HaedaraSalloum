@@ -13,10 +13,10 @@ export default function Home() {
     <main className="bg-light-bg-primary p-[65px] dark:bg-dark-bg-primary">
       <Header />
       <HeroSection />
+      <ResumeSection />
+      <WorkSection />
       <ServicesSection />
       <ProcessSection />
-      <WorkSection />
-      <ResumeSection />
       <TestimonialsSection />
       <CTASection />
     </main>
