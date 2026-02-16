@@ -24,7 +24,7 @@ const Photo = () => {
         {/* الصورة الرئيسية */}
         <div className='relative w-full h-full rounded-2xl overflow-hidden shadow-2xl transform translate-z-8'>
           <Image 
-            src="/asset/mycartoonPhoto.jpg" 
+            src="/asset/Myphoto.jpg" 
             priority 
             quality={100} 
             fill 
