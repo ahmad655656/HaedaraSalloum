@@ -10,7 +10,7 @@ import ServicesSection from "@/components/home/Services";
 
 export default function Home() {
   return (
-    <main className="bg-light-bg-primary p-[65px] dark:bg-dark-bg-primary">
+    <main className="bg-light-bg-primary md:p-[65px] dark:bg-dark-bg-primary">
       <Header />
       <HeroSection />
       <ResumeSection />
