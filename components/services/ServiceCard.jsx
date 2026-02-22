@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ServiceNumber from './ServiceNumber';
-import ServiceArrow from './ServiceArrow';
+import ServiceIconButton from './ServiceIconButton'; // استيراد المكون الجديد
 import ServiceContent from './ServiceContent';
 import ServiceBackground from './ServiceBackground';
 
@@ -19,6 +19,9 @@ const itemVariants = {
 };
 
 const ServiceCard = ({ service, index }) => {
+  // Create the icon element
+  const IconComponent = service.icon;
+  
   return (
     <motion.div
       variants={itemVariants}
@@ -29,8 +32,20 @@ const ServiceCard = ({ service, index }) => {
         
         <ServiceBackground color={service.color} />
         <ServiceNumber num={service.num} />
-        <ServiceArrow href={service.href} />
-        <ServiceContent title={service.title} description={service.description} />
+        
+        {/* استبدال السهم بالأيقونة في نفس الموقع */}
+        <ServiceIconButton 
+          icon={IconComponent}
+          iconBg={service.iconBg}
+          color={service.color}
+          href={service.href}
+        />
+        
+        <ServiceContent 
+          title={service.title} 
+          description={service.description} 
+          skills={service.skills}
+        />
       </div>
 
       {/* Glow effect behind card */}
