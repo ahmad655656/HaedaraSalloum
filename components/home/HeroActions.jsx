@@ -10,7 +10,7 @@ export default function HeroActions() {
   return (
     <div className="flex flex-col xl:flex-row items-center gap-6 xl:gap-8">
       
-      <a href="/cv.pdf" download>
+      <a href="/Haedara Salloum CV.pdf" download>
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -24,7 +24,7 @@ export default function HeroActions() {
         </motion.div>
       </a>
 
-      <Link href="/contact">
+      <Link href="#contact">
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

@@ -23,12 +23,6 @@ const Header = () => {
         <div className="items-center hidden gap-6 xl:flex">
           <Nav />
           <ThemeToggle />
-          <Link href="/contact">
-            <Button className="relative overflow-hidden group bg-light-accent-primary dark:bg-dark-accent-primary hover:bg-light-accent-hover-primary dark:hover:bg-dark-accent-hover-primary text-light-button-text dark:text-dark-button-text border-0 rounded-full px-6 py-2.5 text-sm font-semibold tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl">
-              <span className="relative z-10">Hire me</span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            </Button>
-          </Link>
         </div>
 
         {/* mobile nav */}
