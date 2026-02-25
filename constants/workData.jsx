@@ -1,59 +1,9 @@
 // constants/workData.jsx
 export const projects = [
-  {
-    num: "01",
-    category: "frontend",
-    title: "Car Website",
-    description: "A modern car showcase platform with sleek animations and responsive design.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "React.js"],
-    level: "BEGINNER",
-    levelColor: "from-emerald-400 to-cyan-400",
-    image: "/asset/car.png",
-    live: "https://ahmad655656.github.io/Fifth-project/",
-    github: "https://github.com/ahmad655656/Fifth-project.git",
-    tech: ["React", "Tailwind"],
-  },
+  // ========== FRONTEND PROJECTS ==========
+  // Intermediate Level
   {
     num: "02",
-    category: "frontend",
-    title: "Games Hub",
-    description: "Interactive gaming platform with multiple mini-games and smooth UI.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "React.js"],
-    level: "BEGINNER",
-    levelColor: "from-emerald-400 to-cyan-400",
-    image: "/asset/game.png",
-    live: "https://ahmad655656.github.io/gameWebsite/",
-    github: "https://github.com/ahmad655656/gameWebsite.git",
-    tech: ["React", "Tailwind"],
-  },
-  {
-    num: "04",
-    category: "frontend",
-    title: "Medical Platform",
-    description: "Healthcare website with appointment booking and medical information.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "React.js"],
-    level: "BEGINNER",
-    levelColor: "from-emerald-400 to-cyan-400",
-    image: "/asset/medical.png",
-    live: "",
-    github: "https://github.com/ahmad655656/medical.git",
-    tech: ["React", "Tailwind"],
-  },
-  {
-    num: "05",
-    category: "full-stack",
-    title: "E-Commerce",
-    description: "Full-stack e-commerce platform with Stripe integration and admin panel.",
-    stack: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "React.js", "Stripe"],
-    level: "INTERMEDIATE",
-    levelColor: "from-amber-400 to-orange-400",
-    image: "/asset/fullstack.mp4",
-    live: "https://photoland-five.vercel.app/",
-    github: "https://github.com/ahmad655656/photoland.git",
-    tech: ["React", "Next.js", "Stripe"],
-  },
-  {
-    num: "06",
     category: "frontend",
     title: "CarLand",
     description: "Premium car rental platform with advanced filtering and booking system.",
@@ -66,7 +16,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "07",
+    num: "03",
     category: "frontend",
     title: "Urban Build",
     description: "Construction company website showcasing projects and services.",
@@ -79,7 +29,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "08",
+    num: "04",
     category: "frontend",
     title: "TypeScript Games",
     description: "Collection of games built with TypeScript for type safety and performance.",
@@ -92,7 +42,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript"],
   },
   {
-    num: "09",
+    num: "05",
     category: "frontend",
     title: "Software Landing",
     description: "Modern software product landing page with conversion optimization.",
@@ -104,8 +54,10 @@ export const projects = [
     github: "https://github.com/ahmad655656/softwareLandingPage.git",
     tech: ["Next.js", "TypeScript"],
   },
+
+  // Advanced Level
   {
-    num: "10",
+    num: "06",
     category: "frontend",
     title: "AI Image Generator",
     description: "AI-powered image generation platform with DALL-E integration.",
@@ -118,7 +70,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "AI"],
   },
   {
-    num: "11",
+    num: "07",
     category: "frontend",
     title: "Foodie",
     description: "Restaurant discovery platform with reviews and reservation system.",
@@ -131,46 +83,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript"],
   },
   {
-    num: "12",
-    category: "fullstack",
-    title: "CodeSync",
-    description: "Real-time collaborative coding platform with Clerk authentication.",
-    stack: ["HTML5", "CSS3", "TypeScript", "Tailwind CSS", "React.js", "Next.js", "Clerk", "Convex"],
-    level: "ADVANCED",
-    levelColor: "from-purple-400 to-pink-400",
-    image: "/asset/CodeSync.png",
-    live: "https://condesync.vercel.app/",
-    github: "https://github.com/ahmad655656/condesync.git",
-    tech: ["Next.js", "TypeScript", "Realtime"],
-  },
-  {
-    num: "13",
-    category: "fullstack",
-    title: "Socially",
-    description: "Social media platform with real-time updates and Prisma database.",
-    stack: ["HTML5", "CSS3", "TypeScript", "Tailwind CSS", "React.js", "Next.js", "Clerk", "Prisma"],
-    level: "ADVANCED",
-    levelColor: "from-purple-400 to-pink-400",
-    image: "/asset/socially.png",
-    live: "https://socially-indol.vercel.app/",
-    github: "https://github.com/ahmad655656/socially.git",
-    tech: ["Next.js", "TypeScript", "Prisma"],
-  },
-  {
-    num: "14",
-    category: "fullstack",
-    title: "SleepTracker",
-    description: "Health tracking app with sleep analytics and personalized insights.",
-    stack: ["HTML5", "CSS3", "TypeScript", "Tailwind CSS", "React.js", "Next.js", "Clerk", "Prisma"],
-    level: "ADVANCED",
-    levelColor: "from-purple-400 to-pink-400",
-    image: "/asset/Sleep.png",
-    live: "https://sleeptracker-rho.vercel.app/",
-    github: "https://github.com/ahmad655656/sleeptracker.git",
-    tech: ["Next.js", "TypeScript", "Prisma"],
-  },
-  {
-    num: "15",
+    num: "08",
     category: "frontend",
     title: "Courses Platform",
     description: "Online learning platform with video courses and progress tracking.",
@@ -183,7 +96,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "16",
+    num: "09",
     category: "frontend",
     title: "Intelligence Games",
     description: "Brain training games platform with difficulty progression and scoring.",
@@ -196,7 +109,68 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "17",
+    num: "10",
+    category: "frontend",
+    title: "Virtual Museum - 360° Tours",
+    description: "Interactive virtual museum platform with 360° immersive tours, interactive maps, and cultural heritage exploration across 9 countries.",
+    longDescription: "A revolutionary digital platform that takes users on an immersive journey through world heritage sites. Features 360° panoramic views, interactive maps with real landmarks, category-based exploration (Historical, Natural, Modern, Maritime), and detailed historical information about 13+ international landmarks across 9 countries.",
+    stack: ["Next.js 14", "TypeScript", "Tailwind CSS", "Leaflet", "React Leaflet", "AirPano API", "Framer Motion"],
+    level: "ADVANCED",
+    levelColor: "from-purple-400 to-pink-400",
+    image: "/asset/virtual.png",
+    live: "https://virtual-tour-delta.vercel.app/",
+    github: "https://github.com/ahmad655656/virtualTour.git",
+    tech: ["Next.js 14", "TypeScript", "Tailwind", "Leaflet", "Framer Motion"],
+    features: [
+      "360° immersive virtual tours",
+      "Interactive world map with landmark markers",
+      "Category-based filtering (Historical, Natural, Modern, Maritime)",
+      "Responsive design for all devices",
+      "Detailed landmark pages with historical context",
+      "Real-time map interactions",
+      "Cultural heritage preservation",
+      "Multi-language support (Arabic/English)",
+      "Advanced animations and transitions",
+      "Dynamic routing for each landmark",
+      "Server-side rendering for SEO optimization"
+    ],
+    highlights: [
+      "13+ international landmarks",
+      "9 countries represented",
+      "4 distinct categories",
+      "Real AirPano 360° integrations"
+    ]
+  },
+
+  // ========== FULLSTACK PROJECTS ==========
+  {
+    num: "11",
+    category: "fullstack",
+    title: "Socially",
+    description: "Social media platform with real-time updates and Prisma database.",
+    stack: ["HTML5", "CSS3", "TypeScript", "Tailwind CSS", "React.js", "Next.js", "Clerk", "Prisma"],
+    level: "ADVANCED",
+    levelColor: "from-purple-400 to-pink-400",
+    image: "/asset/socially.png",
+    live: "https://socially-indol.vercel.app/",
+    github: "https://github.com/ahmad655656/socially.git",
+    tech: ["Next.js", "TypeScript", "Prisma"],
+  },
+  {
+    num: "12",
+    category: "fullstack",
+    title: "SleepTracker",
+    description: "Health tracking app with sleep analytics and personalized insights.",
+    stack: ["HTML5", "CSS3", "TypeScript", "Tailwind CSS", "React.js", "Next.js", "Clerk", "Prisma"],
+    level: "ADVANCED",
+    levelColor: "from-purple-400 to-pink-400",
+    image: "/asset/Sleep.png",
+    live: "https://sleeptracker-rho.vercel.app/",
+    github: "https://github.com/ahmad655656/sleeptracker.git",
+    tech: ["Next.js", "TypeScript", "Prisma"],
+  },
+  {
+    num: "13",
     category: "fullstack",
     title: "Car Rental Platform",
     description: "Integrated car booking platform with complete management system, user authentication, and instant reservations.",
@@ -220,8 +194,28 @@ export const projects = [
 ];
 
 export const stats = [
-  { value: "16+", label: "Total Projects" },
-  { value: "5+", label: "Full Stack" },
-  { value: "11+", label: "Frontend" },
-  { value: "6+", label: "Advanced" },
+  { 
+    value: "13+", 
+    label: "Total Projects",
+    icon: "🚀",
+    color: "from-amber-500/20 to-orange-500/20"
+  },
+  { 
+    value: "3+", 
+    label: "Full Stack",
+    icon: "⚙️",
+    color: "from-blue-500/20 to-cyan-500/20"
+  },
+  { 
+    value: "10+", 
+    label: "Frontend",
+    icon: "🎨",
+    color: "from-purple-500/20 to-pink-500/20"
+  },
+  { 
+    value: "8+", 
+    label: "Advanced Level",
+    icon: "🔥",
+    color: "from-emerald-500/20 to-green-500/20"
+  },
 ];
