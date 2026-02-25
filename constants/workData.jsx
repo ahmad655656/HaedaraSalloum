@@ -1,9 +1,7 @@
-// constants/workData.jsx
 export const projects = [
-  // ========== FRONTEND PROJECTS ==========
   // Intermediate Level
   {
-    num: "02",
+    num: "01",
     category: "frontend",
     title: "CarLand",
     description: "Premium car rental platform with advanced filtering and booking system.",
@@ -16,7 +14,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "03",
+    num: "02",
     category: "frontend",
     title: "Urban Build",
     description: "Construction company website showcasing projects and services.",
@@ -29,7 +27,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "04",
+    num: "03",
     category: "frontend",
     title: "TypeScript Games",
     description: "Collection of games built with TypeScript for type safety and performance.",
@@ -42,7 +40,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript"],
   },
   {
-    num: "05",
+    num: "04",
     category: "frontend",
     title: "Software Landing",
     description: "Modern software product landing page with conversion optimization.",
@@ -57,7 +55,7 @@ export const projects = [
 
   // Advanced Level
   {
-    num: "06",
+    num: "05",
     category: "frontend",
     title: "AI Image Generator",
     description: "AI-powered image generation platform with DALL-E integration.",
@@ -70,7 +68,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "AI"],
   },
   {
-    num: "07",
+    num: "06",
     category: "frontend",
     title: "Foodie",
     description: "Restaurant discovery platform with reviews and reservation system.",
@@ -83,7 +81,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript"],
   },
   {
-    num: "08",
+    num: "07",
     category: "frontend",
     title: "Courses Platform",
     description: "Online learning platform with video courses and progress tracking.",
@@ -96,7 +94,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "09",
+    num: "08",
     category: "frontend",
     title: "Intelligence Games",
     description: "Brain training games platform with difficulty progression and scoring.",
@@ -109,7 +107,7 @@ export const projects = [
     tech: ["Next.js", "Tailwind"],
   },
   {
-    num: "10",
+    num: "09",
     category: "frontend",
     title: "Virtual Museum - 360° Tours",
     description: "Interactive virtual museum platform with 360° immersive tours, interactive maps, and cultural heritage exploration across 9 countries.",
@@ -144,7 +142,7 @@ export const projects = [
 
   // ========== FULLSTACK PROJECTS ==========
   {
-    num: "11",
+    num: "10",
     category: "fullstack",
     title: "Socially",
     description: "Social media platform with real-time updates and Prisma database.",
@@ -157,7 +155,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "Prisma"],
   },
   {
-    num: "12",
+    num: "11",
     category: "fullstack",
     title: "SleepTracker",
     description: "Health tracking app with sleep analytics and personalized insights.",
@@ -170,7 +168,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript", "Prisma"],
   },
   {
-    num: "13",
+    num: "12",
     category: "fullstack",
     title: "Car Rental Platform",
     description: "Integrated car booking platform with complete management system, user authentication, and instant reservations.",
@@ -195,7 +193,7 @@ export const projects = [
 
 export const stats = [
   { 
-    value: "13+", 
+    value: "12+", 
     label: "Total Projects",
     icon: "🚀",
     color: "from-amber-500/20 to-orange-500/20"
@@ -207,7 +205,7 @@ export const stats = [
     color: "from-blue-500/20 to-cyan-500/20"
   },
   { 
-    value: "10+", 
+    value: "09+", 
     label: "Frontend",
     icon: "🎨",
     color: "from-purple-500/20 to-pink-500/20"
