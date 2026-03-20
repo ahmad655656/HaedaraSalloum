@@ -1,0 +1,55 @@
+"use client";
+
+import { Component } from 'react';
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null, errorInfo: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    this.setState({
+      error: error,
+      errorInfo: errorInfo
+    });
+    console.error('Error caught by boundary:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+          <div className="text-center p-8">
+            <h1 className="text-2xl font-bold mb-4">حدث خطأ في التطبيق</h1>
+            <p className="mb-4">عذرًا، حدث خطأ غير متوقع. يرجى تحديث الصفحة أو المحاولة لاحقًا.</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg"
+            >
+              تحديث الصفحة
+            </button>
+            {process.env.NODE_ENV === 'development' && (
+              <details className="mt-4 text-left">
+                <summary className="cursor-pointer">تفاصيل الخطأ (للمطورين)</summary>
+                <pre className="mt-2 text-sm bg-gray-800 p-4 rounded overflow-auto">
+                  {this.state.error && this.state.error.toString()}
+                  <br />
+                  {this.state.errorInfo.componentStack}
+                </pre>
+              </details>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
+export default ErrorBoundary;
