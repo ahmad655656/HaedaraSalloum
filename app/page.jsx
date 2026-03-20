@@ -5,7 +5,6 @@ import ProcessSection from "@/components/home/ProcessSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ServicesSection from "@/components/home/Services";
 import ErrorBoundary from "@/components/ErrorBoundary";
 

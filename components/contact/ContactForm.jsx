@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiSend, FiCheckCircle, FiAlertCircle, FiMessageSquare } from 'react-icons/fi';
+import { FiSend, FiCheckCircle, FiAlertCircle } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
@@ -54,7 +54,6 @@ const ContactForm = () => {
       });
       return;
     }
-
     try {
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
