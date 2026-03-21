@@ -32,15 +32,15 @@ const WorkSection = () => {
           padding: 20px 0 40px !important;
         }
         .work-slider .swiper-slide {
-          transition: all 0.4s ease;
-          opacity: 0.4;
-          transform: scale(0.85);
-          filter: blur(1px);
+          transition: all 0.3s ease;
+          opacity: 1;
+          transform: none;
+          filter: none;
         }
         .work-slider .swiper-slide-active {
           opacity: 1;
-          transform: scale(1);
-          filter: blur(0);
+          transform: none;
+          filter: none;
           z-index: 10;
         }
         .work-slider .swiper-pagination-bullet {

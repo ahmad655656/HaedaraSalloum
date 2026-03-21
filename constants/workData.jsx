@@ -207,13 +207,13 @@ export const projects = [
     category: "fullstack",
     title: "Trade B2B",
     description: "B2B trading platform connecting businesses with advanced marketplace and deal management.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    stack: ["Next.js", "Tailwind CSS", "PostgreSQL", "Neon"],
     level: "ADVANCED",
     levelColor: "from-purple-400 to-pink-400",
     image: "/asset/trade.png",
     live: "https://trade-b2b.vercel.app/",
-    github: "#",
-    tech: ["Next.js", "Tailwind"],
+    github: "https://github.com/ahmad655656/trade.git",
+    tech: ["Next.js", "Tailwind CSS", "PostgreSQL", "Neon"],
   }
 ];
 

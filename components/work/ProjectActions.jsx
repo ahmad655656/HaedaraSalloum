@@ -5,28 +5,32 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 
 const ProjectActions = ({ live, github }) => {
+  const isValidLink = (url) => url && url !== "#";
+
   return (
-    <div className="flex gap-2">
-      {live && (
-        <Link href={live} target="_blank">
-          <motion.div
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            whileTap={{ scale: 0.95 }}
-            className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center text-white shadow-lg cursor-pointer hover:shadow-xl transition-all"
-          >
-            <FiExternalLink className="w-4 h-4" />
-          </motion.div>
+    <div className="flex items-center gap-2">
+      {isValidLink(live) && (
+        <Link
+          href={live}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open live project"
+          className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:shadow-md"
+        >
+          <FiExternalLink className="h-4 w-4" />
+          <span className="hidden sm:inline">Live</span>
         </Link>
       )}
-      {github && (
-        <Link href={github} target="_blank">
-          <motion.div
-            whileHover={{ scale: 1.1, rotate: -5 }}
-            whileTap={{ scale: 0.95 }}
-            className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all shadow-lg cursor-pointer"
-          >
-            <FiGithub className="w-4 h-4" />
-          </motion.div>
+      {isValidLink(github) && (
+        <Link
+          href={github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open GitHub repository"
+          className="group inline-flex items-center gap-2 rounded-xl bg-slate-100 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition-all hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+        >
+          <FiGithub className="h-4 w-4" />
+          <span className="hidden sm:inline">Code</span>
         </Link>
       )}
     </div>
