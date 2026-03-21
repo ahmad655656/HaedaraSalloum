@@ -8,7 +8,7 @@ const ProjectLevel = ({ level, levelColor, num }) => {
       <span className="text-3xl sm:text-4xl font-extrabold text-slate-400 dark:text-slate-500 leading-none">
         {num}
       </span>
-      <span className={`px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-gradient-to-r ${levelColor} text-white shadow-sm`}>
+      <span className={`px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-gradient-to-r ${levelColor} text-gray-600 shadow-sm`}>
         {level}
       </span>
     </div>
